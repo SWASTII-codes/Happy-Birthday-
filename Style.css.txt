@@ -1,0 +1,122 @@
+/* 🌸 Aesthetic Birthday Page Styling 🌸 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 🎀 Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 80%;
+    margin: 20px;
+}
+
+/* 🎂 Title Styling */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 💌 Message Styling */
+.message {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎶 Audio Player Styling */
+audio {
+    margin-top: 15px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🎁 Button Styling */
+button {
+    padding: 12px 25px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #e60000;
+    transform: scale(1.05);
+}
+
+/* 🎇 Hidden Section */
+.hidden {
+    display: none;
+}
+
+/* 📸 Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* ✨ Extra Surprise Message */
+#extra-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    animation: glow 1.5s infinite alternate;
+}
+
+/* 🌟 Glow Effect */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffb3b3, 0 0 20px #ff4d4d;
+    }
+    to {
+        text-shadow: 0 0 20px #ff4d4d, 0 0 40px #e60000;
+    }
+}
